@@ -25,7 +25,7 @@ public class CharacterRepository {
                     field("id"),
                     field("first_name"),
                     field("last_name"),
-                    field("show_name"))
+                    field("show_name").as("showName"))
                 .from(table("characters"))
                 .fetchInto(Character.class);
     }
@@ -35,10 +35,23 @@ public class CharacterRepository {
                     field("id"),
                     field("first_name"),
                     field("last_name"),
-                    field("show"))
+                    field("show_name").as("showName"))
                 .from(table("characters"))
                 .where(field("id").eq(id))
                 .fetchOneInto(Character.class);
+    }
+
+    public Character createCharacter(Character c){
+       return dsl.insertInto(table("characters"))
+                .columns(
+                        field("first_name"),
+                        field("last_name"),
+                        field("show_name")
+                    ).values(c.getFirstName(),c.getLastName(),c.getShowName())
+                .returning(field("id"),
+                        field("first_name"),
+                        field("last_name"),
+                        field("show_name")).fetchOne().into(Character.class);
     }
 
     public boolean deleteCharacter(Long id){

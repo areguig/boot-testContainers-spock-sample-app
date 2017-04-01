@@ -21,8 +21,9 @@ public class BootTestContainersSpockApplicationTests {
 	ApplicationContext context;
 
 	@Test
-	public void contextLoads() {
+	public void contextLoadsSpringBootTest() {
 		assertTrue(context.containsBean("bootTestContainersSpockApplication"));
+
 	}
 
 }

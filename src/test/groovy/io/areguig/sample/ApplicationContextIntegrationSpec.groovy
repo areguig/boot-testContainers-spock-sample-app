@@ -17,9 +17,10 @@ class ApplicationContextIntegrationSpec extends Specification{
     @Autowired
     ApplicationContext context
 
-    def "should boot up without errors"() {
-        expect:
+    def "Spring context should start correctly."() {
+        expect: "the spring context is not null and it contains the application bean "
         context != null
         context.containsBean("bootTestContainersSpockApplication")
+
     }
 }
