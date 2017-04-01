@@ -12,7 +12,19 @@ I wrote this sample during the writing of my post about [__Testing Spring-Boot a
 - Built with [Gradle](https://gradle.org/)
 - Uses [JOOQ](https://www.jooq.org/) as DSL to construct SQL queries.
 
+### Run the sample
 
+- run the tests 
+
+```bash 
+./gradlew test
+```
+
+- run the app 
+
+```bash 
+./gradlew bootRun
+```
 
 #### Contributions : 
 Feel free to open issues or submit PRs if you thing it is needed.
