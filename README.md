@@ -1,8 +1,13 @@
-# boot-testContainers-spock-sample-app
+# Spring-boot,testContainers and spock sample app
 
 A sample spring boot application tested using TestContainers Spock framework. 
 
 I wrote this sample during the writing of my post about [__Testing Spring-Boot apps using TestContainers and Spock__](https://areguig.github.io/test-springboot-apps-using-testContainers-and-spock/).
+
+#### Requirements
+
+- Docker or docker-machine (for OS X)
+- Java 8 
 
 #### Tech stack : 
 
