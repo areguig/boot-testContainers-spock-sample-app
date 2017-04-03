@@ -15,7 +15,7 @@ I wrote this sample during the writing of my post about [__Testing Spring-Boot a
 - Integration database provided by [TestContainers](https://www.testcontainers.org/)
 - Powered by [Spring-Boot](https://projects.spring.io/spring-boot/)
 - Built with [Gradle](https://gradle.org/)
-- Uses [JOOQ](https://www.jooq.org/) as DSL to construct SQL queries.
+- Uses [JOOQ](https://www.jooq.org/) as DSL to build SQL queries.
 
 ### Run the sample
 
